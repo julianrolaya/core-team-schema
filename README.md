@@ -1,32 +1,47 @@
-# React + TypeScript + Vite
+# Sunny Energy Tech - Interactive Org Chart
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Bienvenido al organigrama interactivo y dinámico de **Sunny Energy Tech**. Esta aplicación visualiza la estructura organizacional de los equipos B2B y B2C, ofreciendo un panel estratégico con información de perfiles, rangos salariales, habilidades y los flujos de comunicación diaria.
 
-Currently, two official plugins are available:
+## 🚀 Cómo descargar y visualizar el proyecto en local
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Si deseas ejecutar este proyecto en tu propia computadora, solo necesitas tener [Node.js](https://nodejs.org/) instalado. Sigue estos pasos:
 
-## React Compiler
+### 1. Clonar el repositorio
+Abre tu terminal (o línea de comandos) y ejecuta el siguiente comando para descargar el código a tu máquina:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+git clone https://github.com/julianrolaya/core-team-schema.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 2. Entrar a la carpeta del proyecto
+Ingresa al directorio que se acaba de descargar:
+
+```bash
+cd core-team-schema
+```
+
+*(Nota: Si clonaste el proyecto en otra ruta o bajo otro nombre local, asegúrate de ingresar a la carpeta correcta, por ejemplo: `cd sunny-org-chart`)*
+
+### 3. Instalar las dependencias
+Instala todas las librerías y dependencias necesarias para que el proyecto funcione:
+
+```bash
+npm install
+```
+
+### 4. Ejecutar la aplicación
+Levanta el servidor local de desarrollo:
+
+```bash
+npm run dev
+```
+
+La terminal te indicará una dirección local (usualmente `http://localhost:5173/`). Haz "Ctrl + Clic" o "Cmd + Clic" sobre ese enlace, o cópialo en tu navegador para ver la aplicación funcionando.
+
+---
+
+### 🛠 Scripts Útiles Adicionales
+- **Compilar para producción:** `npm run build`
+- **Pre-visualizar la compilación:** `npm run preview`
+
+*Desarrollado con React 18, Vite y TypeScript.*
